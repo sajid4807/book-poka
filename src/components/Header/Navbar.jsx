@@ -1,9 +1,14 @@
+import { Link } from "react-router";
 
 const Navbar = () => {
     const link = <>
-        <li className="ml-4">Home</li>
+      <Link className="ml-4" to='/'>Home</Link>
+      <Link className="ml-4" to='/about'>About</Link>
+      <Link className="ml-4" to='/readList'>Read List</Link>
+      
+        {/* <li className="ml-4">Home</li>
         <li className="ml-4">Listed Books</li>
-        <li className="ml-4">Pages to Read</li>
+        <li className="ml-4">Pages to Read</li> */}
     </>
     return (
 
